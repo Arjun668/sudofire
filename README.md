@@ -48,8 +48,8 @@ I have created a <b>signal</b> to create customer after user creations.
 ```
 <br>
 I have created shell script to run terminal command to download database from CRON Job and written one python script to upload .sql to S3.
-
-Please change the below credentials as you required. I have test with actual credentials and its working fine
+<br/><br/>
+Please change the below credentials as you required. I have tested with actual credentials and its working fine
 
 ```
 client = session.client(
