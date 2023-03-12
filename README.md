@@ -48,3 +48,23 @@ I have created a <b>signal</b> to create customer after user creations.
 ```
 <br>
 I have created shell script to run terminal command to download database from CRON Job and written one python script to upload .sql to S3.
+
+Please change the below credentials as you required. I have test with actual credentials and its working fine
+
+```
+client = session.client(
+    's3',
+    config=botocore.config.Config(s3={'addressing_style': 'virtual'}), #  // Configures to use subdomain/virtual calling format.
+    region_name='sgp11',
+    endpoint_url='https://sudofire.digitaloceanspaces.com',
+    aws_access_key_id='DO00U6MREJHK9IOS',
+    aws_secret_access_key='QWVRFGGwe6DYOAPil/JAzhjhfs7qdsUdBDjTTSILE4qBuFcdiRBs'
+)
+
+bucket = 'sudofire_db'
+
+```
+
+
+
+
