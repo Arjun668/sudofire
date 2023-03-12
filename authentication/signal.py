@@ -4,7 +4,7 @@ from .models import User, Customer
 
 
 @receiver(post_save, sender=User)
-def my_handler(sender,instance, **kwargs):
+def save_customer(sender,instance, **kwargs):
     customer_list = Customer.objects.filter(user=instance)
     if not customer_list:
         Customer(user=instance).save()
